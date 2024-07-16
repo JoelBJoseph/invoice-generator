@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import {jsPDF}  from 'jspdf';
+import { jsPDF } from 'jspdf';
 
 interface InvoiceGeneratorProps {
     logoUrl: string;
@@ -28,7 +28,7 @@ const InvoiceGenerator: React.FC<InvoiceGeneratorProps> = ({ logoUrl }) => {
             doc.text('Date: 01-06-2024', 150, 35);
 
             // Add the customer name
-            doc.text('Customer Name: ', 10, 50);
+            doc.text('Customer Name:', 10, 50);
             doc.text('JERIN JOHNY', 50, 50);
 
             // Add table header
